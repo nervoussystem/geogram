@@ -1,37 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
 
+h1 {
+  font-family: arial, sans-serif;    
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+
+<body>
 <H1> 
 <img width="40" style="vertical-align:middle"  src="Images/robot.png"/>
-smoke tests - Robot Framework reports </H1>
+smoke tests - Dashboard </H1>
 </H1>
-<ul>
-<li>
+<table>
+<tr> 
+<th> Configuration </th>
+<th> Robot </th>
+<th> Build </th>
+</tr>
+<tr>
+<td> Linux-Debug </td>
+<td>
 <img style="vertical-align:middle"  src="Images/ok.png"/>
 &nbsp;
-<a href="Linux-Debug/report.html">Linux-Debug</a>
-</li>
-<li>
+<a href="Linux-Debug/report.html">report</a>
+</td>
+<td>
+<a href="Linux-Debug/build_log.txt">log</a>
+&nbsp
+0 warning(s)
+</td>
+</tr>
+<tr>
+<td> Linux-Release </td>
+<td>
 <img style="vertical-align:middle"  src="Images/ok.png"/>
 &nbsp;
-<a href="Linux-Release/report.html">Linux-Release</a>
-</li>
-<li>
+<a href="Linux-Release/report.html">report</a>
+</td>
+<td>
+<a href="Linux-Release/build_log.txt">log</a>
+&nbsp
+0 warning(s)
+</td>
+</tr>
+<tr>
+<td> Windows-Debug </td>
+<td>
 <img style="vertical-align:middle"  src="Images/ok.png"/>
 &nbsp;
-<a href="Windows-Debug/report.html">Windows-Debug</a>
-</li>
-<li>
+<a href="Windows-Debug/report.html">report</a>
+</td>
+<td>
+<a href="Windows-Debug/build_log.txt">log</a>
+&nbsp
+6 warning(s)
+</td>
+</tr>
+<tr>
+<td> Windows-Release </td>
+<td>
 <img style="vertical-align:middle"  src="Images/ok.png"/>
 &nbsp;
-<a href="Windows-Release/report.html">Windows-Release</a>
-</li>
-<li>
+<a href="Windows-Release/report.html">report</a>
+</td>
+<td>
+<a href="Windows-Release/build_log.txt">log</a>
+&nbsp
+5 warning(s)
+</td>
+</tr>
+<tr>
+<td> macOS-Debug </td>
+<td>
 <img style="vertical-align:middle"  src="Images/ok.png"/>
 &nbsp;
-<a href="macOS-Debug/report.html">macOS-Debug</a>
-</li>
-<li>
+<a href="macOS-Debug/report.html">report</a>
+</td>
+<td>
+<a href="macOS-Debug/build_log.txt">log</a>
+&nbsp
+0 warning(s)
+</td>
+</tr>
+<tr>
+<td> macOS-Release </td>
+<td>
 <img style="vertical-align:middle"  src="Images/ok.png"/>
 &nbsp;
-<a href="macOS-Release/report.html">macOS-Release</a>
-</li>
-</ul>
+<a href="macOS-Release/report.html">report</a>
+</td>
+<td>
+<a href="macOS-Release/build_log.txt">log</a>
+&nbsp
+0 warning(s)
+</td>
+</tr>
+</table>
+</body>

@@ -328,8 +328,8 @@ D:\a\geogram\geogram\src\lib\geogram\third_party\libMeshb\sources\libmeshb7.c(22
   Building Custom Rule D:/a/geogram/geogram/src/lib/third_party/numerics/CMakeLists.txt
 cl : command line  warning D9025: overriding '/W1' with '/w' [D:\a\geogram\geogram\build\Windows\src\lib\third_party\numerics\geogram_num_3rdparty.vcxproj]
 cl : command line  warning D9025: overriding '/W1' with '/w' [D:\a\geogram\geogram\build\Windows\src\lib\third_party\numerics\geogram_num_3rdparty.vcxproj]
-  libf2c_abort_.c
 cl : command line  warning D9025: overriding '/W1' with '/w' [D:\a\geogram\geogram\build\Windows\src\lib\third_party\numerics\geogram_num_3rdparty.vcxproj]
+  libf2c_abort_.c
   libf2c_backspac.c
   libf2c_c_abs.c
   libf2c_c_cos.c

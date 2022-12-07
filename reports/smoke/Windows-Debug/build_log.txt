@@ -324,10 +324,7 @@ MSBuild version 17.4.0+18d5aef85 for .NET Framework
   main.cpp
   geogram_demo_SimpleApp.vcxproj -> D:\a\geogram\geogram\build\Windows\bin\Debug\geogram_demo_SimpleApp.exe
   Building Custom Rule D:/a/geogram/geogram/src/lib/third_party/numerics/CMakeLists.txt
-cl : command line  warning D9025: overriding '/W1' with '/w' [D:\a\geogram\geogram\build\Windows\src\lib\third_party\numerics\geogram_num_3rdparty.vcxproj]
-cl : command line  warning D9025: overriding '/W1' with '/w' [D:\a\geogram\geogram\build\Windows\src\lib\third_party\numerics\geogram_num_3rdparty.vcxproj]
   libf2c_abort_.c
-cl : command line  warning D9025: overriding '/W1' with '/w' [D:\a\geogram\geogram\build\Windows\src\lib\third_party\numerics\geogram_num_3rdparty.vcxproj]
   libf2c_backspac.c
   libf2c_c_abs.c
   libf2c_c_cos.c
@@ -514,8 +511,8 @@ cl : command line  warning D9025: overriding '/W1' with '/w' [D:\a\geogram\geogr
   ctbmv.c
   ctbsv.c
   ctpmv.c
-  ctrmm.c
   ctpsv.c
+  ctrmm.c
   ctrmv.c
   ctrsm.c
   ctrsv.c

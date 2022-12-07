@@ -15,8 +15,6 @@ MSBuild version 17.4.0+18d5aef85 for .NET Framework
   Building Custom Rule D:/a/geogram/geogram/src/lib/geogram/third_party/CMakeLists.txt
   libmeshb7.c
   rply.c
-D:\a\geogram\geogram\src\lib\geogram\third_party\libMeshb\sources\libmeshb7.c(22,1): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition [D:\a\geogram\geogram\build\Windows\src\lib\geogram\third_party\geogram_third_party.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\third_party\libMeshb\sources\libmeshb7.c(22,1): message : '_CRT_SECURE_NO_WARNINGS' previously declared on the command line [D:\a\geogram\geogram\build\Windows\src\lib\geogram\third_party\geogram_third_party.vcxproj]
   adler32.c
   compress.c
   crc32.c

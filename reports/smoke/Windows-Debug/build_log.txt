@@ -15,8 +15,6 @@ MSBuild version 17.4.0+18d5aef85 for .NET Framework
   Building Custom Rule D:/a/geogram/geogram/src/lib/geogram/third_party/CMakeLists.txt
   libmeshb7.c
   rply.c
-D:\a\geogram\geogram\src\lib\geogram\third_party\libMeshb\sources\libmeshb7.c(22,1): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition [D:\a\geogram\geogram\build\Windows\src\lib\geogram\third_party\geogram_third_party.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\third_party\libMeshb\sources\libmeshb7.c(22,1): message : '_CRT_SECURE_NO_WARNINGS' previously declared on the command line [D:\a\geogram\geogram\build\Windows\src\lib\geogram\third_party\geogram_third_party.vcxproj]
   adler32.c
   compress.c
   crc32.c
@@ -329,8 +327,8 @@ D:\a\geogram\geogram\src\lib\exploragram\hexdom\hex_cruncher.cpp(1259): warning 
   Building Custom Rule D:/a/geogram/geogram/src/lib/third_party/numerics/CMakeLists.txt
 cl : command line  warning D9025: overriding '/W1' with '/w' [D:\a\geogram\geogram\build\Windows\src\lib\third_party\numerics\geogram_num_3rdparty.vcxproj]
 cl : command line  warning D9025: overriding '/W1' with '/w' [D:\a\geogram\geogram\build\Windows\src\lib\third_party\numerics\geogram_num_3rdparty.vcxproj]
-cl : command line  warning D9025: overriding '/W1' with '/w' [D:\a\geogram\geogram\build\Windows\src\lib\third_party\numerics\geogram_num_3rdparty.vcxproj]
   libf2c_abort_.c
+cl : command line  warning D9025: overriding '/W1' with '/w' [D:\a\geogram\geogram\build\Windows\src\lib\third_party\numerics\geogram_num_3rdparty.vcxproj]
   libf2c_backspac.c
   libf2c_c_abs.c
   libf2c_c_cos.c

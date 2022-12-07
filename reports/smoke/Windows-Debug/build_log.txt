@@ -208,7 +208,6 @@ MSBuild version 17.4.0+18d5aef85 for .NET Framework
   hex_candidates.cpp
   hex_cruncher.cpp
   hex_dominant.cpp
-D:\a\geogram\geogram\src\lib\exploragram\hexdom\hex_cruncher.cpp(1259): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\lib\exploragram\exploragram.vcxproj]
   hexdom_pipeline.cpp
   intersect_tools.cpp
   mesh_inspector.cpp
@@ -515,8 +514,8 @@ cl : command line  warning D9025: overriding '/W1' with '/w' [D:\a\geogram\geogr
   ctbmv.c
   ctbsv.c
   ctpmv.c
-  ctpsv.c
   ctrmm.c
+  ctpsv.c
   ctrmv.c
   ctrsm.c
   ctrsv.c

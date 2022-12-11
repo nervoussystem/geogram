@@ -171,6 +171,8 @@ MSBuild version 17.4.0+18d5aef85 for .NET Framework
   mesh_atlas_maker.cpp
   mesh_global_param.cpp
   mesh_param_packer.cpp
+D:\a\geogram\geogram\src\lib\geogram\parameterization\mesh_param_packer.cpp(345,18): warning C4099: 'GEO::Chart': type name first seen using 'class' now seen using 'struct' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\parameterization\mesh_param_packer.cpp(345,12): message : see declaration of 'GEO::Chart' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_param_validator.cpp
   mesh_segmentation.cpp
   bibliography.cpp

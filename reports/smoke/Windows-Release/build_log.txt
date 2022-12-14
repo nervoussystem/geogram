@@ -169,12 +169,6 @@ MSBuild version 17.4.0+18d5aef85 for .NET Framework
   mesh_LSCM.cpp
   mesh_PGP_2d.cpp
   mesh_atlas_maker.cpp
-D:\a\geogram\geogram\src\lib\geogram\parameterization\mesh_atlas_maker.cpp(516,33): warning C4456: declaration of 'f' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\parameterization\mesh_atlas_maker.cpp(480,25): message : see declaration of 'f' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\parameterization\mesh_atlas_maker.cpp(525,33): warning C4456: declaration of 'f' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\parameterization\mesh_atlas_maker.cpp(480,25): message : see declaration of 'f' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\parameterization\mesh_atlas_maker.cpp(539,33): warning C4456: declaration of 'f' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\parameterization\mesh_atlas_maker.cpp(480,25): message : see declaration of 'f' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_global_param.cpp
   mesh_param_packer.cpp
   mesh_param_validator.cpp

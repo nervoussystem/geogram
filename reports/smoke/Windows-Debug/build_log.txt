@@ -178,8 +178,8 @@ MSBuild version 17.4.0+18d5aef85 for .NET Framework
   lua_io.cpp
   nl_api.c
   nl_arpack.c
-  nl_blas.c
   nl_cholmod.c
+  nl_blas.c
   nl_context.c
   nl_cuda.c
   nl_iterative_solvers.c

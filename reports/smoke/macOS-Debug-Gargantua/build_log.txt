@@ -60,7 +60,6 @@
 [ 32%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_distance.cpp.o
 [ 33%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_fill_holes.cpp.o
 [ 33%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_frame_field.cpp.o
-[ 34%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_geometry.cpp.o
 /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_frame_field.cpp:204:13: error: call to 'nlSetVariable' is ambiguous
             nlSetVariable(2*f, sincos_alpha[2*f]);
             ^~~~~~~~~~~~~

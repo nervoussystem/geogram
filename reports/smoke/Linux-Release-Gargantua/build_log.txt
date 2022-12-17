@@ -133,7 +133,7 @@
 [ 71%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/bibliography/embedded_references.cpp.o
 [ 71%] Linking CXX shared library ../../../lib/libgeogram.so
 [ 71%] Built target geogram
-[ 73%] Building CXX object src/bin/vorpastat/CMakeFiles/vorpastat.dir/main.cpp.o
+[ 72%] Building CXX object src/bin/vorpastat/CMakeFiles/vorpastat.dir/main.cpp.o
 [ 73%] Building CXX object src/bin/vorpacomp/CMakeFiles/vorpacomp.dir/main.cpp.o
 [ 73%] Linking CXX executable ../../../bin/vorpacomp
 [ 74%] Linking CXX executable ../../../bin/vorpastat
@@ -144,20 +144,6 @@
 [ 76%] Linking CXX executable ../../../bin/geodump
 [ 76%] Built target geodump
 [ 77%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/main.cpp.o
-/home/runner/work/geogram/geogram/src/bin/vorpalite/main.cpp: In function ‘void {anonymous}::remove_small_components(GEO::Mesh&, double)’:
-/home/runner/work/geogram/geogram/src/bin/vorpalite/main.cpp:50:42: warning: conversion from ‘GEO::index_t’ {aka ‘long unsigned int’} to ‘double’ may change value [-Wconversion]
-   50 |         double nb_f_removed = M.facets.nb();
-      |                               ~~~~~~~~~~~^~
-/home/runner/work/geogram/geogram/src/bin/vorpalite/main.cpp:52:37: warning: conversion from ‘GEO::index_t’ {aka ‘long unsigned int’} to ‘double’ may change value [-Wconversion]
-   52 |         nb_f_removed -= M.facets.nb();
-      |                                     ^
-/home/runner/work/geogram/geogram/src/bin/vorpalite/main.cpp: In function ‘bool {anonymous}::preprocess(GEO::Mesh&)’:
-/home/runner/work/geogram/geogram/src/bin/vorpalite/main.cpp:253:53: warning: conversion from ‘GEO::index_t’ {aka ‘long unsigned int’} to ‘unsigned int’ may change value [-Wconversion]
-  253 |             unsigned int nb_removed = M_in.facets.nb();
-      |                                       ~~~~~~~~~~~~~~^~
-/home/runner/work/geogram/geogram/src/bin/vorpalite/main.cpp:255:42: warning: conversion from ‘GEO::index_t’ {aka ‘long unsigned int’} to ‘unsigned int’ may change value [-Wconversion]
-  255 |             nb_removed -= M_in.facets.nb();
-      |                                          ^
 [ 77%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/nn_search_ANN.cpp.o
 [ 77%] Linking CXX executable ../../../bin/vorpalite
 [ 77%] Built target vorpalite
@@ -173,19 +159,19 @@
 [ 82%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/brute.cpp.o
 [ 82%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_dump.cpp.o
 [ 83%] Linking CXX executable ../../../bin/bench_load
-[ 84%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_fix_rad_search.cpp.o
-[ 84%] Built target bench_load
-[ 85%] Building CXX object src/tests/test_locks/CMakeFiles/test_locks.dir/main.cpp.o
+[ 83%] Built target bench_load
+[ 84%] Building CXX object src/tests/test_locks/CMakeFiles/test_locks.dir/main.cpp.o
+[ 85%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_fix_rad_search.cpp.o
 [ 85%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_pr_search.cpp.o
+[ 85%] Linking CXX executable ../../../bin/test_locks
 [ 86%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_search.cpp.o
-[ 86%] Linking CXX executable ../../../bin/test_locks
 [ 86%] Built target test_locks
 [ 87%] Building CXX object src/tests/test_expansion_nt/CMakeFiles/test_expansion_nt.dir/main.cpp.o
 [ 87%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_split.cpp.o
 [ 87%] Linking CXX executable ../../../bin/test_expansion_nt
+[ 87%] Built target test_expansion_nt
+[ 87%] Building CXX object src/tests/test_HLBFGS/CMakeFiles/test_HLBFGS.dir/main.cpp.o
 [ 88%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_tree.cpp.o
-[ 88%] Built target test_expansion_nt
-[ 88%] Building CXX object src/tests/test_HLBFGS/CMakeFiles/test_HLBFGS.dir/main.cpp.o
 [ 89%] Linking CXX executable ../../../bin/test_HLBFGS
 [ 89%] Built target test_HLBFGS
 [ 89%] Building CXX object src/tests/test_RVC/CMakeFiles/test_RVC.dir/main.cpp.o
@@ -195,24 +181,20 @@
 [ 90%] Built target test_nn_search
 [ 91%] Building CXX object src/tests/test_logger/CMakeFiles/test_logger.dir/main.cpp.o
 [ 91%] Linking CXX executable ../../../bin/test_logger
-[ 91%] Built target test_logger
-[ 91%] Building CXX object src/examples/geogram/compute_delaunay/CMakeFiles/compute_delaunay.dir/main.cpp.o
 [ 92%] Linking CXX executable ../../../bin/test_RVC
+[ 92%] Built target test_logger
+[ 92%] Building CXX object src/examples/geogram/compute_delaunay/CMakeFiles/compute_delaunay.dir/main.cpp.o
 [ 92%] Built target test_RVC
 [ 92%] Building CXX object src/examples/geogram/compute_RVD/CMakeFiles/compute_RVD.dir/main.cpp.o
 [ 93%] Linking CXX executable ../../../../bin/compute_delaunay
 [ 93%] Built target compute_delaunay
 [ 93%] Building CXX object src/examples/geogram/opennl_LSCM/CMakeFiles/opennl_LSCM.dir/main.cpp.o
-[ 94%] Linking CXX executable ../../../../bin/opennl_LSCM
-[ 95%] Linking CXX executable ../../../../bin/compute_RVD
+[ 94%] Linking CXX executable ../../../../bin/compute_RVD
+[ 94%] Built target compute_RVD
+[ 94%] Building CXX object src/examples/geogram/opennl_mesh_smooth/CMakeFiles/opennl_mesh_smooth.dir/main.cpp.o
+[ 95%] Linking CXX executable ../../../../bin/opennl_LSCM
 [ 95%] Built target opennl_LSCM
-[ 95%] Building CXX object src/examples/geogram/opennl_mesh_smooth/CMakeFiles/opennl_mesh_smooth.dir/main.cpp.o
-[ 95%] Built target compute_RVD
 [ 95%] Building CXX object src/examples/geogram/manifold_harmonics/CMakeFiles/manifold_harmonics.dir/main.cpp.o
-/home/runner/work/geogram/geogram/src/examples/geogram/opennl_mesh_smooth/main.cpp: In function ‘void {anonymous}::mesh_smooth(GEO::Mesh*, NLenum)’:
-/home/runner/work/geogram/geogram/src/examples/geogram/opennl_mesh_smooth/main.cpp:102:24: warning: conversion from ‘GEO::index_t’ {aka ‘long unsigned int’} to ‘NLuint’ {aka ‘unsigned int’} may change value [-Wconversion]
-  102 |   NL_VARIABLES_BUFFER, coord,
-      |                        ^~~~~
 [ 96%] Linking CXX executable ../../../../bin/manifold_harmonics
 [ 96%] Built target manifold_harmonics
 [ 96%] Building C object src/examples/geogram/opennl_basic_example/CMakeFiles/opennl_basic_example.dir/main.c.o

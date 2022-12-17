@@ -708,8 +708,8 @@ MSBuild version 17.4.0+18d5aef85 for .NET Framework
   clapack_sgeqr2.c
   clapack_sisnan.c
   clapack_slabad.c
-  clapack_slacpy.c
   clapack_slacn2.c
+  clapack_slacpy.c
   clapack_sladiv.c
   clapack_slae2.c
   clapack_slaev2.c

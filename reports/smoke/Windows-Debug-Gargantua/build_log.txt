@@ -137,8 +137,8 @@ D:\a\geogram\geogram\src\lib\geogram\delaunay\periodic_delaunay_3d.cpp(88,57): w
   nl_iterative_solvers.c
   nl_matrix.c
   nl_mkl.c
-D:\a\geogram\geogram\src\lib\geogram\NL\nl_matrix.c(193): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\NL\nl_matrix.c(167): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\NL\nl_matrix.c(193): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   nl_os.c
   nl_preconditioners.c
   nl_superlu.c

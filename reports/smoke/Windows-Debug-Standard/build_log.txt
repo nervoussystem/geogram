@@ -563,8 +563,8 @@ MSBuild version 17.4.0+18d5aef85 for .NET Framework
   scabs1.c
   scasum.c
   scnrm2.c
-  scopy.c
   sdot.c
+  scopy.c
   sdsdot.c
   sgbmv.c
   sgemm.c
@@ -706,8 +706,8 @@ MSBuild version 17.4.0+18d5aef85 for .NET Framework
   clapack_izmax1.c
   clapack_scsum1.c
   clapack_sgeqr2.c
-  clapack_sisnan.c
   clapack_slabad.c
+  clapack_sisnan.c
   clapack_slacn2.c
   clapack_slacpy.c
   clapack_sladiv.c
@@ -786,8 +786,8 @@ MSBuild version 17.4.0+18d5aef85 for .NET Framework
   cmyblas2.c
   colamd.c
   cpanel_bmod.c
-  cpanel_dfs.c
   cpivotL.c
+  cpanel_dfs.c
   cpivotgrowth.c
   cpruneL.c
   creadhb.c

@@ -1,5 +1,5 @@
-[  1%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/libMeshb/sources/libmeshb7.c.o
 [  1%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/rply/rply.c.o
+[  1%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/libMeshb/sources/libmeshb7.c.o
 [  2%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/zlib/adler32.c.o
 [  3%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/zlib/compress.c.o
 [  3%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/zlib/crc32.c.o
@@ -20,8 +20,8 @@
 [ 11%] Building CXX object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/PoissonRecon/poisson_geogram.cpp.o
 [ 12%] Building CXX object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/xatlas/xatlas.cpp.o
 [ 12%] Built target geogram_third_party
+[ 12%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/algorithm.cpp.o
 [ 13%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/android_utils.cpp.o
-[ 13%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/algorithm.cpp.o
 [ 13%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/assert.cpp.o
 [ 14%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/attributes.cpp.o
 [ 14%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/b_stream.cpp.o
@@ -109,16 +109,21 @@
 [ 58%] Building C object src/lib/geogram/CMakeFiles/geogram.dir/NL/nl_iterative_solvers.c.o
 [ 59%] Building C object src/lib/geogram/CMakeFiles/geogram.dir/NL/nl_matrix.c.o
 [ 59%] Building C object src/lib/geogram/CMakeFiles/geogram.dir/NL/nl_mkl.c.o
-/home/runner/work/geogram/geogram/src/lib/geogram/NL/nl_mkl.c:236:1: error: expected identifier or ‘(’ before ‘[’ token
-  236 | [[ noreturn ]] static void NLMultMatrixVector_MKL_impl(
-      | ^
-/home/runner/work/geogram/geogram/src/lib/geogram/NL/nl_mkl.c: In function ‘nlInitExtension_MKL’:
-/home/runner/work/geogram/geogram/src/lib/geogram/NL/nl_mkl.c:329:27: error: ‘NLMultMatrixVector_MKL_impl’ undeclared (first use in this function); did you mean ‘NLMultMatrixVector_MKL’?
-  329 |  NLMultMatrixVector_MKL = NLMultMatrixVector_MKL_impl;
-      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                           NLMultMatrixVector_MKL
-/home/runner/work/geogram/geogram/src/lib/geogram/NL/nl_mkl.c:329:27: note: each undeclared identifier is reported only once for each function it appears in
-make[2]: *** [src/lib/geogram/CMakeFiles/geogram.dir/build.make:1308: src/lib/geogram/CMakeFiles/geogram.dir/NL/nl_mkl.c.o] Error 1
+/Users/runner/work/geogram/geogram/src/lib/geogram/NL/nl_mkl.c:236:2: error: expected expression
+[[ noreturn ]] static void NLMultMatrixVector_MKL_impl(
+ ^
+/Users/runner/work/geogram/geogram/src/lib/geogram/NL/nl_mkl.c:236:16: error: expected identifier or '('
+[[ noreturn ]] static void NLMultMatrixVector_MKL_impl(
+               ^
+/Users/runner/work/geogram/geogram/src/lib/geogram/NL/nl_mkl.c:329:27: error: use of undeclared identifier 'NLMultMatrixVector_MKL_impl'; did you mean 'NLMultMatrixVector_MKL'?
+        NLMultMatrixVector_MKL = NLMultMatrixVector_MKL_impl;
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                 NLMultMatrixVector_MKL
+/Users/runner/work/geogram/geogram/src/lib/geogram/NL/nl_mkl.h:79:31: note: 'NLMultMatrixVector_MKL' declared here
+extern NLMultMatrixVectorFunc NLMultMatrixVector_MKL;
+                              ^
+3 errors generated.
+make[2]: *** [src/lib/geogram/CMakeFiles/geogram.dir/NL/nl_mkl.c.o] Error 1
 make[2]: *** Waiting for unfinished jobs....
-make[1]: *** [CMakeFiles/Makefile2:616: src/lib/geogram/CMakeFiles/geogram.dir/all] Error 2
-make: *** [Makefile:156: all] Error 2
+make[1]: *** [src/lib/geogram/CMakeFiles/geogram.dir/all] Error 2
+make: *** [all] Error 2

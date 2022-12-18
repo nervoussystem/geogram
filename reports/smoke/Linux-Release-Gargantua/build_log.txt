@@ -1,5 +1,5 @@
-[  1%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/libMeshb/sources/libmeshb7.c.o
 [  1%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/rply/rply.c.o
+[  1%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/libMeshb/sources/libmeshb7.c.o
 [  2%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/zlib/adler32.c.o
 [  3%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/zlib/compress.c.o
 [  3%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/zlib/crc32.c.o
@@ -109,16 +109,15 @@
 [ 58%] Building C object src/lib/geogram/CMakeFiles/geogram.dir/NL/nl_iterative_solvers.c.o
 [ 59%] Building C object src/lib/geogram/CMakeFiles/geogram.dir/NL/nl_matrix.c.o
 [ 59%] Building C object src/lib/geogram/CMakeFiles/geogram.dir/NL/nl_mkl.c.o
-/home/runner/work/geogram/geogram/src/lib/geogram/NL/nl_mkl.c: In function ‘NLMultMatrixVector_MKL_impl’:
-/home/runner/work/geogram/geogram/src/lib/geogram/NL/nl_mkl.c:237:5: error: parameter name omitted
-  237 |     NLMatrix, const double*, double*
-      |     ^~~~~~~~
-/home/runner/work/geogram/geogram/src/lib/geogram/NL/nl_mkl.c:237:15: error: parameter name omitted
-  237 |     NLMatrix, const double*, double*
-      |               ^~~~~~~~~~~~~
-/home/runner/work/geogram/geogram/src/lib/geogram/NL/nl_mkl.c:237:30: error: parameter name omitted
-  237 |     NLMatrix, const double*, double*
-      |                              ^~~~~~~
+/home/runner/work/geogram/geogram/src/lib/geogram/NL/nl_mkl.c:236:1: error: expected identifier or ‘(’ before ‘[’ token
+  236 | [[ noreturn ]] static void NLMultMatrixVector_MKL_impl(
+      | ^
+/home/runner/work/geogram/geogram/src/lib/geogram/NL/nl_mkl.c: In function ‘nlInitExtension_MKL’:
+/home/runner/work/geogram/geogram/src/lib/geogram/NL/nl_mkl.c:329:27: error: ‘NLMultMatrixVector_MKL_impl’ undeclared (first use in this function); did you mean ‘NLMultMatrixVector_MKL’?
+  329 |  NLMultMatrixVector_MKL = NLMultMatrixVector_MKL_impl;
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                           NLMultMatrixVector_MKL
+/home/runner/work/geogram/geogram/src/lib/geogram/NL/nl_mkl.c:329:27: note: each undeclared identifier is reported only once for each function it appears in
 make[2]: *** [src/lib/geogram/CMakeFiles/geogram.dir/build.make:1308: src/lib/geogram/CMakeFiles/geogram.dir/NL/nl_mkl.c.o] Error 1
 make[2]: *** Waiting for unfinished jobs....
 make[1]: *** [CMakeFiles/Makefile2:616: src/lib/geogram/CMakeFiles/geogram.dir/all] Error 2

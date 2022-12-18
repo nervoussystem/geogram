@@ -37,10 +37,6 @@ MSBuild version 17.4.0+18d5aef85 for .NET Framework
   factory.cpp
   file_system.cpp
   geofile.cpp
-D:\a\geogram\geogram\src\lib\geogram\basic\geofile.cpp(210,36): warning C4477: 'fscanf' : format string '%lu' requires an argument of type 'unsigned long *', but variadic argument 1 has type 'GEO::index_t *' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\basic\geofile.cpp(210,36): message : consider using '%llu' in the format string [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\basic\geofile.cpp(210,36): message : consider using '%Iu' in the format string [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\basic\geofile.cpp(210,36): message : consider using '%I64u' in the format string [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   geometry.cpp
   line_stream.cpp
   logger.cpp

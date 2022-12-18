@@ -1,4 +1,4 @@
-MSBuild version 17.4.1+9a89d02ff for .NET Framework
+MSBuild version 17.4.0+18d5aef85 for .NET Framework
   Checking Build System
   Building Custom Rule D:/a/geogram/geogram/src/lib/geogram/third_party/CMakeLists.txt
   libmeshb7.c
@@ -37,10 +37,6 @@ MSBuild version 17.4.1+9a89d02ff for .NET Framework
   factory.cpp
   file_system.cpp
   geofile.cpp
-D:\a\geogram\geogram\src\lib\geogram\basic\geofile.cpp(210,36): warning C4477: 'fscanf' : format string '%lu' requires an argument of type 'unsigned long *', but variadic argument 1 has type 'GEO::index_t *' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\basic\geofile.cpp(210,36): message : consider using '%llu' in the format string [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\basic\geofile.cpp(210,36): message : consider using '%Iu' in the format string [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\basic\geofile.cpp(210,36): message : consider using '%I64u' in the format string [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   geometry.cpp
   line_stream.cpp
   logger.cpp
@@ -95,8 +91,8 @@ D:\a\geogram\geogram\src\lib\geogram/delaunay/periodic.h(150,1): warning C4334: 
   parallel_delaunay_3d.cpp
 D:\a\geogram\geogram\src\lib\geogram\delaunay\parallel_delaunay_3d.cpp(80,57): warning C4244: '=': conversion from 'GEO::signed_index_t' to 'long', possible loss of data [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   periodic.cpp
-  periodic_delaunay_3d.cpp
 D:\a\geogram\geogram\src\lib\geogram/delaunay/periodic.h(150,1): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?) (compiling source file D:\a\geogram\geogram\src\lib\geogram\delaunay\periodic.cpp) [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+  periodic_delaunay_3d.cpp
   CVT.cpp
 D:\a\geogram\geogram\src\lib\geogram/delaunay/periodic.h(150,1): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?) (compiling source file D:\a\geogram\geogram\src\lib\geogram\delaunay\periodic_delaunay_3d.cpp) [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\delaunay\periodic_delaunay_3d.cpp(88,57): warning C4244: '=': conversion from 'GEO::signed_index_t' to 'long', possible loss of data [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
@@ -141,8 +137,8 @@ D:\a\geogram\geogram\src\lib\geogram\delaunay\periodic_delaunay_3d.cpp(88,57): w
   nl_iterative_solvers.c
   nl_matrix.c
   nl_mkl.c
-D:\a\geogram\geogram\src\lib\geogram\NL\nl_matrix.c(167): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\NL\nl_matrix.c(193): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\NL\nl_matrix.c(167): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   nl_os.c
   nl_preconditioners.c
   nl_superlu.c

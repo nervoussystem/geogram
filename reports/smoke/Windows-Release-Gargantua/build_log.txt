@@ -1,4 +1,4 @@
-MSBuild version 17.4.0+18d5aef85 for .NET Framework
+MSBuild version 17.4.1+9a89d02ff for .NET Framework
   Checking Build System
   Building Custom Rule D:/a/geogram/geogram/src/lib/geogram/third_party/CMakeLists.txt
   libmeshb7.c
@@ -37,6 +37,12 @@ MSBuild version 17.4.0+18d5aef85 for .NET Framework
   factory.cpp
   file_system.cpp
   geofile.cpp
+D:\a\geogram\geogram\src\lib\geogram\basic\geofile.cpp(239,40): warning C4477: 'fprintf' : format string '%Id' requires an argument of type '__int64', but variadic argument 1 has type 'GEO::Numeric::uint32' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\basic\geofile.cpp(239,40): message : consider using '%d' in the format string [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\basic\geofile.cpp(239,40): message : consider using '%I32d' in the format string [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\basic\geofile.cpp(245,37): warning C4477: 'fprintf' : format string '%Id' requires an argument of type '__int64', but variadic argument 1 has type 'GEO::Numeric::uint32' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\basic\geofile.cpp(245,37): message : consider using '%d' in the format string [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\basic\geofile.cpp(245,37): message : consider using '%I32d' in the format string [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   geometry.cpp
   line_stream.cpp
   logger.cpp
@@ -136,8 +142,8 @@ D:\a\geogram\geogram\src\lib\geogram\delaunay\periodic_delaunay_3d.cpp(88,57): w
   nl_cuda.c
   nl_iterative_solvers.c
   nl_matrix.c
-  nl_mkl.c
 D:\a\geogram\geogram\src\lib\geogram\NL\nl_matrix.c(193): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+  nl_mkl.c
 D:\a\geogram\geogram\src\lib\geogram\NL\nl_matrix.c(167): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   nl_os.c
   nl_preconditioners.c

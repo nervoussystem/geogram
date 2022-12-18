@@ -34,21 +34,20 @@
 [ 18%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/file_system.cpp.o
 [ 19%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/geofile.cpp.o
 [ 19%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/geometry.cpp.o
-/home/runner/work/geogram/geogram/src/lib/geogram/basic/geofile.cpp: In member function ‘void GEO::GeoFile::write_int(GEO::index_t, const char*)’:
-/home/runner/work/geogram/geogram/src/lib/geogram/basic/geofile.cpp:237:43: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 3 has type ‘GEO::Numeric::uint32’ {aka ‘unsigned int’} [-Wformat=]
-  237 |                 if(fprintf(ascii_file_,"%lu\n",x) ==0) {
-      |                                         ~~^    ~
-      |                                           |    |
-      |                                           |    GEO::Numeric::uint32 {aka unsigned int}
-      |                                           long unsigned int
-      |                                         %u
-/home/runner/work/geogram/geogram/src/lib/geogram/basic/geofile.cpp:241:43: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 3 has type ‘GEO::Numeric::uint32’ {aka ‘unsigned int’} [-Wformat=]
-  241 |                 if(fprintf(ascii_file_,"%lu # this is %s\n",x,comment) ==0) {
-      |                                         ~~^                 ~
-      |                                           |                 |
-      |                                           long unsigned int GEO::Numeric::uint32 {aka unsigned int}
-      |                                         %u
+/Users/runner/work/geogram/geogram/src/lib/geogram/basic/geofile.cpp:210:43: warning: format specifies type 'unsigned long *' but the argument has type 'GEO::index_t *' (aka 'unsigned long long *') [-Wformat]
+            if(fscanf(ascii_file_, "%lu", &result) == 0) {
+                                    ~~~   ^~~~~~~
+                                    %llu
+/Users/runner/work/geogram/geogram/src/lib/geogram/basic/geofile.cpp:237:48: warning: format specifies type 'unsigned long' but the argument has type 'Numeric::uint32' (aka 'unsigned int') [-Wformat]
+                if(fprintf(ascii_file_,"%lu\n",x) ==0) {
+                                        ~~~    ^
+                                        %u
+/Users/runner/work/geogram/geogram/src/lib/geogram/basic/geofile.cpp:241:61: warning: format specifies type 'unsigned long' but the argument has type 'Numeric::uint32' (aka 'unsigned int') [-Wformat]
+                if(fprintf(ascii_file_,"%lu # this is %s\n",x,comment) ==0) {
+                                        ~~~                 ^
+                                        %u
 [ 20%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/line_stream.cpp.o
+3 warnings generated.
 [ 20%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/logger.cpp.o
 [ 21%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/numeric.cpp.o
 [ 21%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/packed_arrays.cpp.o
@@ -96,12 +95,23 @@
 [ 44%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/delaunay/delaunay_3d.cpp.o
 [ 44%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/delaunay/delaunay_nn.cpp.o
 [ 45%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/delaunay/delaunay_tetgen.cpp.o
+/Users/runner/work/geogram/geogram/src/lib/geogram/delaunay/delaunay_tetgen.cpp:384:5: warning: no previous extern declaration for non-static variable 'dummy_delaunay_tetgen_compiled' [-Wmissing-variable-declarations]
+int dummy_delaunay_tetgen_compiled = 1;
+    ^
+/Users/runner/work/geogram/geogram/src/lib/geogram/delaunay/delaunay_tetgen.cpp:384:1: note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int dummy_delaunay_tetgen_compiled = 1;
+^
+1 warning generated.
 [ 45%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/delaunay/delaunay_triangle.cpp.o
 [ 46%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/delaunay/parallel_delaunay_3d.cpp.o
 [ 46%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/delaunay/periodic.cpp.o
 [ 47%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/delaunay/periodic_delaunay_3d.cpp.o
 [ 47%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/voronoi/CVT.cpp.o
+/Users/runner/work/geogram/geogram/src/lib/geogram/delaunay/periodic_delaunay_3d.cpp:120:9: warning: implicit conversion loses integer precision: 'GEO::index_t' (aka 'unsigned long long') to 'VBW::index_t' (aka 'unsigned int') [-Wshorten-64-to-32]
+        return GEO::index_t(Numeric::uint32(__builtin_popcount(x)));
+        ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 [ 48%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/voronoi/RVD.cpp.o
+1 warning generated.
 [ 49%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/voronoi/RVD_callback.cpp.o
 [ 49%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/voronoi/RVD_mesh_builder.cpp.o
 [ 50%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/voronoi/convex_cell.cpp.o
@@ -123,6 +133,10 @@
 [ 58%] Building C object src/lib/geogram/CMakeFiles/geogram.dir/NL/nl_iterative_solvers.c.o
 [ 59%] Building C object src/lib/geogram/CMakeFiles/geogram.dir/NL/nl_matrix.c.o
 [ 59%] Building C object src/lib/geogram/CMakeFiles/geogram.dir/NL/nl_mkl.c.o
+/Users/runner/work/geogram/geogram/src/lib/geogram/NL/nl_mkl.c:239:3: warning: function 'NLMultMatrixVector_MKL_impl' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+) {
+  ^
+1 warning generated.
 [ 60%] Building C object src/lib/geogram/CMakeFiles/geogram.dir/NL/nl_os.c.o
 [ 60%] Building C object src/lib/geogram/CMakeFiles/geogram.dir/NL/nl_preconditioners.c.o
 [ 61%] Building C object src/lib/geogram/CMakeFiles/geogram.dir/NL/nl_superlu.c.o
@@ -145,69 +159,69 @@
 [ 70%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/parameterization/mesh_segmentation.cpp.o
 [ 70%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/bibliography/bibliography.cpp.o
 [ 71%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/bibliography/embedded_references.cpp.o
-[ 71%] Linking CXX shared library ../../../lib/libgeogram.so
+[ 71%] Linking CXX shared library ../../../lib/libgeogram.dylib
 [ 71%] Built target geogram
-[ 72%] Building CXX object src/bin/vorpastat/CMakeFiles/vorpastat.dir/main.cpp.o
 [ 73%] Building CXX object src/bin/vorpacomp/CMakeFiles/vorpacomp.dir/main.cpp.o
+[ 73%] Building CXX object src/bin/vorpastat/CMakeFiles/vorpastat.dir/main.cpp.o
 [ 73%] Linking CXX executable ../../../bin/vorpacomp
 [ 74%] Linking CXX executable ../../../bin/vorpastat
 [ 74%] Built target vorpacomp
-[ 74%] Building CXX object src/bin/geodump/CMakeFiles/geodump.dir/main.cpp.o
 [ 74%] Built target vorpastat
+[ 74%] Building CXX object src/bin/geodump/CMakeFiles/geodump.dir/main.cpp.o
 [ 75%] Building CXX object src/bin/vorpalite/CMakeFiles/vorpalite.dir/main.cpp.o
 [ 76%] Linking CXX executable ../../../bin/geodump
 [ 76%] Built target geodump
 [ 77%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/main.cpp.o
-[ 77%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/nn_search_ANN.cpp.o
 [ 77%] Linking CXX executable ../../../bin/vorpalite
 [ 77%] Built target vorpalite
+[ 77%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/nn_search_ANN.cpp.o
 [ 78%] Building CXX object src/tests/test_convex_cell/CMakeFiles/test_convex_cell.dir/main.cpp.o
 [ 79%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/ANN.cpp.o
 [ 79%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_fix_rad_search.cpp.o
 [ 80%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_pr_search.cpp.o
 [ 80%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_search.cpp.o
+[ 80%] Linking CXX executable ../../../bin/test_convex_cell
+[ 80%] Built target test_convex_cell
 [ 81%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_tree.cpp.o
-[ 81%] Linking CXX executable ../../../bin/test_convex_cell
-[ 81%] Built target test_convex_cell
 [ 81%] Building CXX object src/tests/bench_load/CMakeFiles/bench_load.dir/main.cpp.o
 [ 82%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/brute.cpp.o
 [ 82%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_dump.cpp.o
 [ 83%] Linking CXX executable ../../../bin/bench_load
 [ 83%] Built target bench_load
-[ 84%] Building CXX object src/tests/test_locks/CMakeFiles/test_locks.dir/main.cpp.o
-[ 85%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_fix_rad_search.cpp.o
+[ 84%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_fix_rad_search.cpp.o
+[ 85%] Building CXX object src/tests/test_locks/CMakeFiles/test_locks.dir/main.cpp.o
 [ 85%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_pr_search.cpp.o
-[ 85%] Linking CXX executable ../../../bin/test_locks
 [ 86%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_search.cpp.o
+[ 86%] Linking CXX executable ../../../bin/test_locks
 [ 86%] Built target test_locks
+[ 86%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_split.cpp.o
 [ 87%] Building CXX object src/tests/test_expansion_nt/CMakeFiles/test_expansion_nt.dir/main.cpp.o
-[ 87%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_split.cpp.o
-[ 87%] Linking CXX executable ../../../bin/test_expansion_nt
-[ 87%] Built target test_expansion_nt
-[ 87%] Building CXX object src/tests/test_HLBFGS/CMakeFiles/test_HLBFGS.dir/main.cpp.o
 [ 88%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_tree.cpp.o
+[ 88%] Linking CXX executable ../../../bin/test_expansion_nt
+[ 88%] Built target test_expansion_nt
+[ 88%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_util.cpp.o
+[ 88%] Building CXX object src/tests/test_HLBFGS/CMakeFiles/test_HLBFGS.dir/main.cpp.o
 [ 89%] Linking CXX executable ../../../bin/test_HLBFGS
-[ 89%] Built target test_HLBFGS
-[ 89%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_util.cpp.o
 [ 90%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/perf.cpp.o
+[ 90%] Built target test_HLBFGS
 [ 90%] Building CXX object src/tests/test_RVC/CMakeFiles/test_RVC.dir/main.cpp.o
 [ 90%] Linking CXX executable ../../../bin/test_nn_search
 [ 90%] Built target test_nn_search
 [ 91%] Building CXX object src/tests/test_logger/CMakeFiles/test_logger.dir/main.cpp.o
-[ 91%] Linking CXX executable ../../../bin/test_logger
-[ 91%] Built target test_logger
-[ 91%] Building CXX object src/examples/geogram/compute_delaunay/CMakeFiles/compute_delaunay.dir/main.cpp.o
 [ 92%] Linking CXX executable ../../../bin/test_RVC
 [ 92%] Built target test_RVC
+[ 92%] Building CXX object src/examples/geogram/compute_delaunay/CMakeFiles/compute_delaunay.dir/main.cpp.o
+[ 92%] Linking CXX executable ../../../bin/test_logger
+[ 92%] Built target test_logger
 [ 92%] Building CXX object src/examples/geogram/compute_RVD/CMakeFiles/compute_RVD.dir/main.cpp.o
 [ 93%] Linking CXX executable ../../../../bin/compute_delaunay
 [ 93%] Built target compute_delaunay
 [ 93%] Building CXX object src/examples/geogram/opennl_LSCM/CMakeFiles/opennl_LSCM.dir/main.cpp.o
-[ 94%] Linking CXX executable ../../../../bin/opennl_LSCM
-[ 94%] Built target opennl_LSCM
+[ 94%] Linking CXX executable ../../../../bin/compute_RVD
+[ 94%] Built target compute_RVD
 [ 94%] Building CXX object src/examples/geogram/opennl_mesh_smooth/CMakeFiles/opennl_mesh_smooth.dir/main.cpp.o
-[ 95%] Linking CXX executable ../../../../bin/compute_RVD
-[ 95%] Built target compute_RVD
+[ 95%] Linking CXX executable ../../../../bin/opennl_LSCM
+[ 95%] Built target opennl_LSCM
 [ 95%] Building CXX object src/examples/geogram/manifold_harmonics/CMakeFiles/manifold_harmonics.dir/main.cpp.o
 [ 96%] Linking CXX executable ../../../../bin/opennl_mesh_smooth
 [ 96%] Built target opennl_mesh_smooth
@@ -218,7 +232,7 @@
 [ 98%] Linking CXX executable ../../../../bin/manifold_harmonics
 [ 98%] Built target manifold_harmonics
 [ 98%] Building CXX object src/examples/geogram/boolean_operations/CMakeFiles/boolean_op.dir/main.cpp.o
-[ 99%] Linking CXX executable ../../../../bin/simple_raytrace
-[100%] Linking CXX executable ../../../../bin/boolean_op
-[100%] Built target simple_raytrace
+[ 99%] Linking CXX executable ../../../../bin/boolean_op
+[100%] Linking CXX executable ../../../../bin/simple_raytrace
 [100%] Built target boolean_op
+[100%] Built target simple_raytrace

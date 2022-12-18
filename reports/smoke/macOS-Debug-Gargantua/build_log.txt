@@ -43,8 +43,8 @@
 [ 23%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/process_win.cpp.o
 [ 24%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/progress.cpp.o
 [ 24%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/quaternion.cpp.o
-[ 24%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/string.cpp.o
 [ 25%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/stopwatch.cpp.o
+[ 25%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/string.cpp.o
 [ 26%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/numerics/expansion_nt.cpp.o
 [ 26%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/numerics/lbfgs_optimizers.cpp.o
 [ 27%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/numerics/matrix_util.cpp.o
@@ -109,21 +109,47 @@
 [ 58%] Building C object src/lib/geogram/CMakeFiles/geogram.dir/NL/nl_iterative_solvers.c.o
 [ 59%] Building C object src/lib/geogram/CMakeFiles/geogram.dir/NL/nl_matrix.c.o
 [ 59%] Building C object src/lib/geogram/CMakeFiles/geogram.dir/NL/nl_mkl.c.o
-/Users/runner/work/geogram/geogram/src/lib/geogram/NL/nl_mkl.c:236:2: error: expected expression
-[[ noreturn ]] static void NLMultMatrixVector_MKL_impl(
- ^
-/Users/runner/work/geogram/geogram/src/lib/geogram/NL/nl_mkl.c:236:16: error: expected identifier or '('
-[[ noreturn ]] static void NLMultMatrixVector_MKL_impl(
-               ^
-/Users/runner/work/geogram/geogram/src/lib/geogram/NL/nl_mkl.c:329:27: error: use of undeclared identifier 'NLMultMatrixVector_MKL_impl'; did you mean 'NLMultMatrixVector_MKL'?
-        NLMultMatrixVector_MKL = NLMultMatrixVector_MKL_impl;
-                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-                                 NLMultMatrixVector_MKL
-/Users/runner/work/geogram/geogram/src/lib/geogram/NL/nl_mkl.h:79:31: note: 'NLMultMatrixVector_MKL' declared here
-extern NLMultMatrixVectorFunc NLMultMatrixVector_MKL;
-                              ^
-3 errors generated.
-make[2]: *** [src/lib/geogram/CMakeFiles/geogram.dir/NL/nl_mkl.c.o] Error 1
-make[2]: *** Waiting for unfinished jobs....
+/Users/runner/work/geogram/geogram/src/lib/geogram/NL/nl_mkl.c:237:13: warning: omitting the parameter name in a function definition is a C2x extension [-Wc2x-extensions]
+    NLMatrix, const double*, double* 
+            ^
+/Users/runner/work/geogram/geogram/src/lib/geogram/NL/nl_mkl.c:237:28: warning: omitting the parameter name in a function definition is a C2x extension [-Wc2x-extensions]
+    NLMatrix, const double*, double* 
+                           ^
+/Users/runner/work/geogram/geogram/src/lib/geogram/NL/nl_mkl.c:238:1: warning: omitting the parameter name in a function definition is a C2x extension [-Wc2x-extensions]
+)
+^
+3 warnings generated.
+[ 60%] Building C object src/lib/geogram/CMakeFiles/geogram.dir/NL/nl_os.c.o
+[ 60%] Building C object src/lib/geogram/CMakeFiles/geogram.dir/NL/nl_preconditioners.c.o
+[ 61%] Building C object src/lib/geogram/CMakeFiles/geogram.dir/NL/nl_superlu.c.o
+[ 61%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/image/colormap.cpp.o
+[ 62%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/image/image.cpp.o
+[ 62%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/image/image_library.cpp.o
+[ 63%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/image/image_rasterizer.cpp.o
+[ 63%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/image/image_serializer.cpp.o
+[ 64%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/image/image_serializer_pgm.cpp.o
+[ 64%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/image/image_serializer_stb.cpp.o
+[ 65%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/image/image_serializer_xpm.cpp.o
+[ 66%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/image/morpho_math.cpp.o
+[ 66%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/parameterization/mesh_ABF.cpp.o
+[ 67%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/parameterization/mesh_LSCM.cpp.o
+[ 67%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/parameterization/mesh_PGP_2d.cpp.o
+[ 68%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/parameterization/mesh_atlas_maker.cpp.o
+[ 68%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/parameterization/mesh_global_param.cpp.o
+[ 69%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/parameterization/mesh_param_packer.cpp.o
+[ 69%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/parameterization/mesh_param_validator.cpp.o
+[ 70%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/parameterization/mesh_segmentation.cpp.o
+[ 70%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/bibliography/bibliography.cpp.o
+[ 71%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/bibliography/embedded_references.cpp.o
+[ 71%] Linking CXX shared library ../../../lib/libgeogram.dylib
+Undefined symbols for architecture x86_64:
+  "_NLMultMatrixVector_MKL", referenced from:
+      _nlInitExtension_CHOLMOD in nl_cholmod.c.o
+      _nlCRSMatrixConstruct in nl_matrix.c.o
+      _nlCRSMatrixConstructPattern in nl_matrix.c.o
+      _nlInitExtension_MKL in nl_mkl.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[2]: *** [lib/libgeogram.1.8.3-rc.dylib] Error 1
 make[1]: *** [src/lib/geogram/CMakeFiles/geogram.dir/all] Error 2
 make: *** [all] Error 2

@@ -74,7 +74,6 @@ MSBuild version 17.4.0+18d5aef85 for .NET Framework
   mesh_preprocessing.cpp
   mesh_remesh.cpp
   mesh_reorder.cpp
-D:\a\geogram\geogram\src\lib\geogram/delaunay/periodic.h(150,1): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?) (compiling source file D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_reorder.cpp) [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_repair.cpp
   mesh_smoothing.cpp
   mesh_subdivision.cpp
@@ -89,13 +88,9 @@ D:\a\geogram\geogram\src\lib\geogram/delaunay/periodic.h(150,1): warning C4334: 
   delaunay_tetgen.cpp
   delaunay_triangle.cpp
   parallel_delaunay_3d.cpp
-D:\a\geogram\geogram\src\lib\geogram\delaunay\parallel_delaunay_3d.cpp(80,57): warning C4244: '=': conversion from 'GEO::signed_index_t' to 'long', possible loss of data [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   periodic.cpp
-D:\a\geogram\geogram\src\lib\geogram/delaunay/periodic.h(150,1): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?) (compiling source file D:\a\geogram\geogram\src\lib\geogram\delaunay\periodic.cpp) [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   periodic_delaunay_3d.cpp
   CVT.cpp
-D:\a\geogram\geogram\src\lib\geogram/delaunay/periodic.h(150,1): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?) (compiling source file D:\a\geogram\geogram\src\lib\geogram\delaunay\periodic_delaunay_3d.cpp) [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\delaunay\periodic_delaunay_3d.cpp(88,57): warning C4244: '=': conversion from 'GEO::signed_index_t' to 'long', possible loss of data [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   RVD.cpp
   RVD_callback.cpp
   RVD_mesh_builder.cpp
@@ -137,8 +132,8 @@ D:\a\geogram\geogram\src\lib\geogram\delaunay\periodic_delaunay_3d.cpp(88,57): w
   nl_iterative_solvers.c
   nl_matrix.c
   nl_mkl.c
-D:\a\geogram\geogram\src\lib\geogram\NL\nl_matrix.c(167): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\NL\nl_matrix.c(193): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\NL\nl_matrix.c(167): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   nl_os.c
   nl_preconditioners.c
   nl_superlu.c
@@ -151,7 +146,6 @@ D:\a\geogram\geogram\src\lib\geogram\NL\nl_matrix.c(193): warning C4702: unreach
   boolean_op.vcxproj -> D:\a\geogram\geogram\build\Windows\bin\Release\boolean_op.exe
   Building Custom Rule D:/a/geogram/geogram/src/examples/geogram/compute_RVD/CMakeLists.txt
   main.cpp
-D:\a\geogram\geogram\src\lib\geogram/delaunay/periodic.h(150,1): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?) [D:\a\geogram\geogram\build\Windows\src\examples\geogram\compute_RVD\compute_RVD.vcxproj]
   compute_RVD.vcxproj -> D:\a\geogram\geogram\build\Windows\bin\Release\compute_RVD.exe
   Building Custom Rule D:/a/geogram/geogram/src/examples/geogram/compute_delaunay/CMakeLists.txt
   main.cpp

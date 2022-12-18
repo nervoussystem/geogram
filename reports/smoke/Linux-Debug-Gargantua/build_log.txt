@@ -33,13 +33,6 @@
 [ 18%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/factory.cpp.o
 [ 18%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/file_system.cpp.o
 [ 19%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/geofile.cpp.o
-/home/runner/work/geogram/geogram/src/lib/geogram/basic/geofile.cpp: In member function ‘size_t GEO::GeoFile::read_size()’:
-/home/runner/work/geogram/geogram/src/lib/geogram/basic/geofile.cpp:49:22: warning: format ‘%lu’ expects argument of type ‘long unsigned int*’, but argument 3 has type ‘int64_t*’ {aka ‘long int*’} [-Wformat=]
-   49 | # define INT64_T_FMT "%" PRIu64
-      |                      ^
-/home/runner/work/geogram/geogram/src/lib/geogram/basic/geofile.cpp:319:36: note: in expansion of macro ‘INT64_T_FMT’
-  319 |             if(fscanf(ascii_file_, INT64_T_FMT "\n", &x) == 0) {
-      |                                    ^~~~~~~~~~~
 [ 19%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/geometry.cpp.o
 [ 20%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/line_stream.cpp.o
 [ 20%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/logger.cpp.o
@@ -203,9 +196,9 @@
 [ 95%] Built target compute_RVD
 [ 95%] Building CXX object src/examples/geogram/manifold_harmonics/CMakeFiles/manifold_harmonics.dir/main.cpp.o
 [ 96%] Linking CXX executable ../../../../bin/manifold_harmonics
+[ 96%] Built target manifold_harmonics
+[ 96%] Building C object src/examples/geogram/opennl_basic_example/CMakeFiles/opennl_basic_example.dir/main.c.o
 [ 97%] Linking CXX executable ../../../../bin/opennl_mesh_smooth
-[ 97%] Built target manifold_harmonics
-[ 97%] Building C object src/examples/geogram/opennl_basic_example/CMakeFiles/opennl_basic_example.dir/main.c.o
 [ 98%] Linking C executable ../../../../bin/opennl_basic_example
 [ 98%] Built target opennl_mesh_smooth
 [ 98%] Building CXX object src/examples/geogram/simple_raytrace/CMakeFiles/simple_raytrace.dir/main.cpp.o

@@ -116,31 +116,6 @@
 [ 62%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/image/image.cpp.o
 [ 62%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/image/image_library.cpp.o
 [ 63%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/image/image_rasterizer.cpp.o
-/home/runner/work/geogram/geogram/src/lib/geogram/image/image_rasterizer.cpp: In member function ‘void GEO::ImageRasterizer::segment(const vec2&, const vec2&, const Color&)’:
-/home/runner/work/geogram/geogram/src/lib/geogram/image/image_rasterizer.cpp:167:27: warning: conversion from ‘GEO::signed_index_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
-  167 |                 set_pixel(x,y,c);
-      |                           ^
-/home/runner/work/geogram/geogram/src/lib/geogram/image/image_rasterizer.cpp:167:29: warning: conversion from ‘GEO::signed_index_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
-  167 |                 set_pixel(x,y,c);
-      |                             ^
-/home/runner/work/geogram/geogram/src/lib/geogram/image/image_rasterizer.cpp:170:31: warning: conversion from ‘GEO::signed_index_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
-  170 |                     set_pixel(x,y,c);
-      |                               ^
-/home/runner/work/geogram/geogram/src/lib/geogram/image/image_rasterizer.cpp:170:33: warning: conversion from ‘GEO::signed_index_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
-  170 |                     set_pixel(x,y,c);
-      |                                 ^
-/home/runner/work/geogram/geogram/src/lib/geogram/image/image_rasterizer.cpp:179:27: warning: conversion from ‘GEO::signed_index_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
-  179 |                 set_pixel(x,y,c);
-      |                           ^
-/home/runner/work/geogram/geogram/src/lib/geogram/image/image_rasterizer.cpp:179:29: warning: conversion from ‘GEO::signed_index_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
-  179 |                 set_pixel(x,y,c);
-      |                             ^
-/home/runner/work/geogram/geogram/src/lib/geogram/image/image_rasterizer.cpp:182:31: warning: conversion from ‘GEO::signed_index_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
-  182 |                     set_pixel(x,y,c);
-      |                               ^
-/home/runner/work/geogram/geogram/src/lib/geogram/image/image_rasterizer.cpp:182:33: warning: conversion from ‘GEO::signed_index_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
-  182 |                     set_pixel(x,y,c);
-      |                                 ^
 [ 63%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/image/image_serializer.cpp.o
 [ 64%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/image/image_serializer_pgm.cpp.o
 [ 64%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/image/image_serializer_stb.cpp.o
@@ -183,8 +158,8 @@
 [ 81%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_tree.cpp.o
 [ 82%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/brute.cpp.o
 [ 83%] Linking CXX executable ../../../bin/bench_load
-[ 83%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_dump.cpp.o
 [ 83%] Built target bench_load
+[ 83%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_dump.cpp.o
 [ 84%] Building CXX object src/tests/test_locks/CMakeFiles/test_locks.dir/main.cpp.o
 [ 85%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_fix_rad_search.cpp.o
 [ 85%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_pr_search.cpp.o
@@ -221,13 +196,13 @@
 [ 95%] Built target compute_RVD
 [ 95%] Building CXX object src/examples/geogram/manifold_harmonics/CMakeFiles/manifold_harmonics.dir/main.cpp.o
 [ 96%] Linking CXX executable ../../../../bin/opennl_mesh_smooth
+[ 96%] Built target opennl_mesh_smooth
+[ 96%] Building C object src/examples/geogram/opennl_basic_example/CMakeFiles/opennl_basic_example.dir/main.c.o
 [ 97%] Linking CXX executable ../../../../bin/manifold_harmonics
-[ 97%] Built target opennl_mesh_smooth
-[ 97%] Building C object src/examples/geogram/opennl_basic_example/CMakeFiles/opennl_basic_example.dir/main.c.o
-[ 97%] Built target manifold_harmonics
 [ 98%] Linking C executable ../../../../bin/opennl_basic_example
-[ 98%] Building CXX object src/examples/geogram/simple_raytrace/CMakeFiles/simple_raytrace.dir/main.cpp.o
 [ 98%] Built target opennl_basic_example
+[ 98%] Building CXX object src/examples/geogram/simple_raytrace/CMakeFiles/simple_raytrace.dir/main.cpp.o
+[ 98%] Built target manifold_harmonics
 [ 98%] Building CXX object src/examples/geogram/boolean_operations/CMakeFiles/boolean_op.dir/main.cpp.o
 [ 99%] Linking CXX executable ../../../../bin/boolean_op
 [ 99%] Built target boolean_op

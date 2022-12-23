@@ -109,14 +109,6 @@ MSBuild version 17.4.1+9a89d02ff for .NET Framework
   image_library.cpp
   image_rasterizer.cpp
   image_serializer.cpp
-D:\a\geogram\geogram\src\lib\geogram\image\image_rasterizer.cpp(167,29): warning C4244: 'argument': conversion from 'GEO::signed_index_t' to 'int', possible loss of data [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\image\image_rasterizer.cpp(167,27): warning C4244: 'argument': conversion from 'GEO::signed_index_t' to 'int', possible loss of data [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\image\image_rasterizer.cpp(170,33): warning C4244: 'argument': conversion from 'GEO::signed_index_t' to 'int', possible loss of data [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\image\image_rasterizer.cpp(170,31): warning C4244: 'argument': conversion from 'GEO::signed_index_t' to 'int', possible loss of data [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\image\image_rasterizer.cpp(179,29): warning C4244: 'argument': conversion from 'GEO::signed_index_t' to 'int', possible loss of data [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\image\image_rasterizer.cpp(179,27): warning C4244: 'argument': conversion from 'GEO::signed_index_t' to 'int', possible loss of data [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\image\image_rasterizer.cpp(182,33): warning C4244: 'argument': conversion from 'GEO::signed_index_t' to 'int', possible loss of data [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\image\image_rasterizer.cpp(182,31): warning C4244: 'argument': conversion from 'GEO::signed_index_t' to 'int', possible loss of data [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   image_serializer_pgm.cpp
   image_serializer_stb.cpp
   image_serializer_xpm.cpp

@@ -12,8 +12,8 @@
   <line>Command: /home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/bin/vorpastat /home/runner/work/geogram/geogram/tests/data/Small/icosa.obj out.meshb</line>
 </preamble>
 
-<pid>19178</pid>
-<ppid>12474</ppid>
+<pid>19294</pid>
+<ppid>12715</ppid>
 <tool>memcheck</tool>
 
 <args>
@@ -42,7 +42,7 @@
 
 <status>
   <state>FINISHED</state>
-  <time>00:00:00:18.749 </time>
+  <time>00:00:00:18.646 </time>
 </status>
 
 <errorcounts>

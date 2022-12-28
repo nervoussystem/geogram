@@ -462,8 +462,8 @@ MSBuild version 17.4.1+9a89d02ff for .NET Framework
   libf2c_sig_die.c
   libf2c_signal_.c
   libf2c_signbit.c
-  libf2c_sue.c
   libf2c_system_.c
+  libf2c_sue.c
   libf2c_typesize.c
   libf2c_uio.c
   libf2c_uninit.c

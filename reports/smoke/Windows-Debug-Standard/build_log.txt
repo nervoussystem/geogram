@@ -242,8 +242,8 @@ MSBuild version 17.4.1+9a89d02ff for .NET Framework
   Building Custom Rule D:/a/geogram/geogram/src/lib/third_party/glfw/src/CMakeLists.txt
   context.c
   init.c
-  input.c
   monitor.c
+  input.c
   platform.c
   vulkan.c
   window.c

@@ -574,8 +574,8 @@ MSBuild version 17.4.1+9a89d02ff for .NET Framework
   srot.c
   srotg.c
   srotm.c
-  ssbmv.c
   srotmg.c
+  ssbmv.c
   sscal.c
   sspmv.c
   sspr.c

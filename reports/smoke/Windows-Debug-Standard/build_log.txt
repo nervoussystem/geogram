@@ -457,8 +457,8 @@ MSBuild version 17.4.1+9a89d02ff for .NET Framework
   libf2c_s_copy.c
   libf2c_s_paus.c
   libf2c_s_rnge.c
-  libf2c_sfe.c
   libf2c_s_stop.c
+  libf2c_sfe.c
   libf2c_sig_die.c
   libf2c_signal_.c
   libf2c_signbit.c
@@ -574,8 +574,8 @@ MSBuild version 17.4.1+9a89d02ff for .NET Framework
   srot.c
   srotg.c
   srotm.c
-  srotmg.c
   ssbmv.c
+  srotmg.c
   sscal.c
   sspmv.c
   sspr.c

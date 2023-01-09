@@ -40,6 +40,9 @@ MSBuild version 17.4.1+9a89d02ff for .NET Framework
   geometry.cpp
   line_stream.cpp
   logger.cpp
+D:\a\geogram\geogram\src\lib\geogram\basic\file_system.cpp(1059,38): warning C4100: 'path': unreferenced formal parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\basic\file_system.cpp(1072,50): warning C4100: 'create_missing_directories': unreferenced formal parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\basic\file_system.cpp(1072,39): warning C4100: 'path': unreferenced formal parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   numeric.cpp
   packed_arrays.cpp
   process.cpp

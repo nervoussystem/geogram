@@ -90,9 +90,6 @@ MSBuild version 17.4.1+9a89d02ff for .NET Framework
   file_system.cpp
   geofile.cpp
   geometry.cpp
-D:\a\geogram\geogram\src\lib\geogram\basic\file_system.cpp(1059,38): warning C4100: 'path': unreferenced formal parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\basic\file_system.cpp(1072,50): warning C4100: 'create_missing_directories': unreferenced formal parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\basic\file_system.cpp(1072,39): warning C4100: 'path': unreferenced formal parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   line_stream.cpp
   logger.cpp
   numeric.cpp
@@ -245,8 +242,8 @@ D:\a\geogram\geogram\src\lib\geogram\basic\file_system.cpp(1072,39): warning C41
   Building Custom Rule D:/a/geogram/geogram/src/lib/third_party/glfw/src/CMakeLists.txt
   context.c
   init.c
-  input.c
   monitor.c
+  input.c
   platform.c
   vulkan.c
   window.c
@@ -433,8 +430,8 @@ D:\a\geogram\geogram\src\lib\geogram\basic\file_system.cpp(1072,39): warning C41
   libf2c_r_asin.c
   libf2c_r_atan.c
   libf2c_r_atn2.c
-  libf2c_r_cos.c
   libf2c_r_cnjg.c
+  libf2c_r_cos.c
   libf2c_r_cosh.c
   libf2c_r_dim.c
   libf2c_r_exp.c

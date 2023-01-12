@@ -76,10 +76,6 @@
 [ 41%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_tetrahedralize.cpp.o
 [ 41%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_topology.cpp.o
 [ 42%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/triangle_intersection.cpp.o
-/home/runner/work/geogram/geogram/src/lib/geogram/mesh/triangle_intersection.cpp: In member function ‘GEO::Sign {anonymous}::TriangleTriangleIntersection::orient3d(GEO::TriangleRegion, GEO::TriangleRegion, GEO::TriangleRegion, GEO::TriangleRegion) const’:
-/home/runner/work/geogram/geogram/src/lib/geogram/mesh/triangle_intersection.cpp:438:44: warning: conversion from ‘int’ to ‘GEO::Numeric::int8’ {aka ‘signed char’} may change value [-Wconversion]
-  438 |                 o3d_cache_[o3d_idx] = flip ? -Numeric::int8(o):Numeric::int8(o);
-      |                                       ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 [ 42%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/delaunay/LFS.cpp.o
 [ 43%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/delaunay/delaunay.cpp.o
 [ 43%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/delaunay/delaunay_2d.cpp.o
@@ -161,8 +157,8 @@
 [ 80%] Building CXX object src/tests/bench_load/CMakeFiles/bench_load.dir/main.cpp.o
 [ 81%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_tree.cpp.o
 [ 82%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/brute.cpp.o
+[ 82%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_dump.cpp.o
 [ 83%] Linking CXX executable ../../../bin/bench_load
-[ 83%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_dump.cpp.o
 [ 83%] Built target bench_load
 [ 84%] Building CXX object src/tests/test_locks/CMakeFiles/test_locks.dir/main.cpp.o
 [ 85%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_fix_rad_search.cpp.o
@@ -201,8 +197,8 @@
 [ 95%] Building CXX object src/examples/geogram/manifold_harmonics/CMakeFiles/manifold_harmonics.dir/main.cpp.o
 [ 96%] Linking CXX executable ../../../../bin/opennl_mesh_smooth
 [ 96%] Built target opennl_mesh_smooth
-[ 96%] Building C object src/examples/geogram/opennl_basic_example/CMakeFiles/opennl_basic_example.dir/main.c.o
 [ 97%] Linking CXX executable ../../../../bin/manifold_harmonics
+[ 97%] Building C object src/examples/geogram/opennl_basic_example/CMakeFiles/opennl_basic_example.dir/main.c.o
 [ 98%] Linking C executable ../../../../bin/opennl_basic_example
 [ 98%] Built target manifold_harmonics
 [ 98%] Building CXX object src/examples/geogram/simple_raytrace/CMakeFiles/simple_raytrace.dir/main.cpp.o

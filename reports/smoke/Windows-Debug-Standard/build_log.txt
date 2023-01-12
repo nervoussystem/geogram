@@ -133,6 +133,10 @@ MSBuild version 17.4.1+9a89d02ff for .NET Framework
   mesh_topology.cpp
   triangle_intersection.cpp
   LFS.cpp
+D:\a\geogram\geogram\src\lib\geogram\mesh\triangle_intersection.cpp(469,22): warning C4457: declaration of 'i' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\triangle_intersection.cpp(462,39): message : see declaration of 'i' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\triangle_intersection.cpp(470,26): warning C4457: declaration of 'j' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\triangle_intersection.cpp(462,50): message : see declaration of 'j' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   delaunay.cpp
   delaunay_2d.cpp
   delaunay_3d.cpp
@@ -242,8 +246,8 @@ MSBuild version 17.4.1+9a89d02ff for .NET Framework
   Building Custom Rule D:/a/geogram/geogram/src/lib/third_party/glfw/src/CMakeLists.txt
   context.c
   init.c
-  monitor.c
   input.c
+  monitor.c
   platform.c
   vulkan.c
   window.c

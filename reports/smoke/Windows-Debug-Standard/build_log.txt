@@ -675,8 +675,8 @@ MSBuild version 17.4.1+9a89d02ff for .NET Framework
   clapack_dlapy3.c
   clapack_dlarf.c
   clapack_dlarfg.c
-  clapack_dlarfx.c
   clapack_dlarfp.c
+  clapack_dlarfx.c
   clapack_dlarnv.c
   clapack_dlartg.c
   clapack_dlaruv.c

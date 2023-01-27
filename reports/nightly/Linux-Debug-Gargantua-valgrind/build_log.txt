@@ -176,8 +176,8 @@
 [ 89%] Building CXX object src/tests/test_HLBFGS/CMakeFiles/test_HLBFGS.dir/main.cpp.o
 [ 90%] Linking CXX executable ../../../bin/test_HLBFGS
 [ 90%] Built target test_HLBFGS
-[ 90%] Linking CXX executable ../../../bin/test_expansion_nt
 [ 90%] Building CXX object src/tests/test_RVC/CMakeFiles/test_RVC.dir/main.cpp.o
+[ 90%] Linking CXX executable ../../../bin/test_expansion_nt
 [ 90%] Built target test_expansion_nt
 [ 91%] Building CXX object src/tests/test_logger/CMakeFiles/test_logger.dir/main.cpp.o
 [ 91%] Linking CXX executable ../../../bin/test_logger

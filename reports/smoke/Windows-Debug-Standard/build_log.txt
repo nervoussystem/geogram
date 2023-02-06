@@ -608,8 +608,8 @@ MSBuild version 17.4.1+9a89d02ff for .NET Framework
   zgemv.c
   zgerc.c
   zgeru.c
-  zhemm.c
   zhbmv.c
+  zhemm.c
   zhemv.c
   zher.c
   zher2.c

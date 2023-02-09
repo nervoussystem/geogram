@@ -58,8 +58,8 @@ MSBuild version 17.4.1+9a89d02ff for .NET Framework
   ltable.c
   ltablib.c
   ltm.c
-  lutf8lib.c
   lundump.c
+  lutf8lib.c
   lvm.c
   lzio.c
   triangle.c

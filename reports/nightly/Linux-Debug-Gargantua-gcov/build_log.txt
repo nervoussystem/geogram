@@ -135,11 +135,11 @@
 [ 71%] Built target geogram
 [ 72%] Building CXX object src/bin/vorpastat/CMakeFiles/vorpastat.dir/main.cpp.o
 [ 73%] Building CXX object src/bin/vorpacomp/CMakeFiles/vorpacomp.dir/main.cpp.o
-[ 73%] Linking CXX executable ../../../bin/vorpacomp
 [ 74%] Linking CXX executable ../../../bin/vorpastat
-[ 74%] Built target vorpacomp
-[ 74%] Building CXX object src/bin/geodump/CMakeFiles/geodump.dir/main.cpp.o
+[ 74%] Linking CXX executable ../../../bin/vorpacomp
 [ 74%] Built target vorpastat
+[ 74%] Building CXX object src/bin/geodump/CMakeFiles/geodump.dir/main.cpp.o
+[ 74%] Built target vorpacomp
 [ 75%] Building CXX object src/bin/vorpalite/CMakeFiles/vorpalite.dir/main.cpp.o
 [ 76%] Linking CXX executable ../../../bin/geodump
 [ 76%] Built target geodump

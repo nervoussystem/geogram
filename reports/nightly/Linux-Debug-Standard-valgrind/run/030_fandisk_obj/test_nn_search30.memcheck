@@ -12,8 +12,8 @@
   <line>Command: /home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/bin/test_nn_search algo:predicates=exact algo:nn_search=CNN /home/runner/work/geogram/geogram/tests/data/RVD/fandisk.obj</line>
 </preamble>
 
-<pid>12610</pid>
-<ppid>12439</ppid>
+<pid>12412</pid>
+<ppid>12244</ppid>
 <tool>memcheck</tool>
 
 <args>
@@ -37,13 +37,13 @@
 
 <status>
   <state>RUNNING</state>
-  <time>00:00:00:00.045 </time>
+  <time>00:00:00:00.040 </time>
 </status>
 
 
 <status>
   <state>FINISHED</state>
-  <time>00:00:00:08.672 </time>
+  <time>00:00:00:08.251 </time>
 </status>
 
 <errorcounts>
